@@ -322,7 +322,7 @@ class AsyncCDPSession:
 def _build_marker() -> str:
     """sha256 of this very file.
 
-    The app manifest pins ghcr.io/tekflox/aw-app-browser:latest, so a green CI
+    The app manifest pins ghcr.io/fredericowu/aw-app-browser:latest, so a green CI
     run does not prove a rebuilt image is what the container is actually
     running. Printing the hash of the live file at startup means
     `podman logs aw-app-browser` can settle that question on its own — compare

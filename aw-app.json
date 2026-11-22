@@ -14,7 +14,7 @@
     "disk": "~500 MB"
   },
   "runtime": {
-    "image": "ghcr.io/tekflox/aw-app-browser:latest",
+    "image": "ghcr.io/fredericowu/aw-app-browser:latest",
     "port": 7900,
     "resources": {
       "cpus": 4.0,
@@ -80,7 +80,7 @@
         "id": "proxy",
         "version": ">=0.1.0",
         "required": true,
-        "reason": "Authentication \u2014 this container's Chrome must tunnel through aw-app-proxy's CONNECT proxy, and aw-app-proxy injects/clears its cookies via CDP so it's logged in as the user. See tekflox/aw-app-proxy README."
+        "reason": "Authentication \u2014 this container's Chrome must tunnel through aw-app-proxy's CONNECT proxy, and aw-app-proxy injects/clears its cookies via CDP so it's logged in as the user. See fredericowu/aw-app-proxy README."
       }
     ],
     "note": "Runtime-enforced app dependency: aw-workspace installs/loads proxy before browser and keeps proxy loaded while browser is desired."

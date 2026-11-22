@@ -143,7 +143,7 @@ python3 tests/antidetect/run_battery.py --label after
 Note this only exercises the daemon. Changes to `entrypoint-lite.sh` (the `TZ`
 resolution, the Chrome flags) need a real container recreation to take effect.
 
-The app manifest pins `ghcr.io/tekflox/aw-app-browser:latest`, so a green CI run
+The app manifest pins `ghcr.io/fredericowu/aw-app-browser:latest`, so a green CI run
 does **not** prove the fix is live. The daemon prints the sha256 of its own file
 at startup — compare `podman logs aw-app-browser | grep 'platform-override.py build'`
 with `sha256sum container/platform-override.py | cut -c1-16`.
